@@ -17,7 +17,7 @@ Switching on the camera in the camel habitat...
             ; ;    ! !    ! !     ; ;
            ;,,      !,!   !,!     ;,;
            /_I      L_I   L_I     /_I
-Look at that! Our little camel is sunbathing!"""
+Look at that! Our little camel is sunbathing!"""  # prints a camel
 
 lion = r"""
 Switching on the camera in the lion habitat...
@@ -35,7 +35,7 @@ WMMm__,-'.'     /      _.\      F'''-+,,   ;_,_.dMMMMMMMM[,_ / `=_}
           /  .'             /  (       .'  /     Ww._     `.  `"
          /  Y,              `,  `-,=,_{   ;      MMMP`""-,  `-._.-,
         (--, )                `,_ / `) \/"")      ^"      `-, -;"\:
-The lion is roaring!"""
+The lion is roaring!"""  # prints a lion
 
 deer = r"""
 Switching on the camera in the deer habitat...
@@ -63,7 +63,7 @@ Switching on the camera in the deer habitat...
            | || |           | |   | |
            |_||_|           |_|   |_|
           /_//_/           /_/   /_/
-Our 'Bambi' looks hungry. Let's go to feed it!"""
+Our 'Bambi' looks hungry. Let's go to feed it!"""  # prints a deer
 
 goose = r"""
 Switching on the camera in the goose habitat...
@@ -79,7 +79,7 @@ Switching on the camera in the goose habitat...
   <`-       (__< <           :
    (__        (_<_<          ;
     `------------------------------------------
-The goose is staring intently at you... Maybe it's time to change the channel?"""
+The goose is staring intently at you... Maybe it's time to change the channel?"""  # prints a goose
 
 bat = r"""
 Switching on the camera in the bat habitat...
@@ -94,7 +94,7 @@ _________________               _________________
            /___      /\   /\      ___\
                 ~-. /  \_/  \ .-~
                    V         V
-This bat looks like it’s doing fine."""
+This bat looks like it’s doing fine."""  # prints a bat
 
 rabbit = r"""
 Switching on the camera in the rabbit habitat...
@@ -117,16 +117,15 @@ Switching on the camera in the rabbit habitat...
  l       I     !
  ]\      _\    /"\
 (" ~----( ~   Y.  )
-It looks like we will soon have more rabbits!"""
+It looks like we will soon have more rabbits!"""  # prints a rabbit
 
 import math
 animals = [camel, lion, deer, goose, bat, rabbit]
 for element in animals:
-   print("Please enter the number of the habitat you would like to view:")
-   habitat_number = input()
+   habitat_number = input("Please enter the number of the habitat you would like to view:")
    if habitat_number.isdigit():
-      print(animals[int(habitat_number)])
-   if habitat_number == "exit":
+      print(animals[int(habitat_number)])  # prints the chosen animal
+   elif habitat_number == "exit":
       break
 print("See you later!")
 
